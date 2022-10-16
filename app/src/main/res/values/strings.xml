@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ApiPunkSolution</string>
+    <string name="search_a_beer">Search a beer …</string>
+    <string name="first_brewed">First brewed</string>
+    <string name="ph">ph</string>
+    <string name="boilVolume">Boil volume</string>
+    <string name="about">About</string>
+</resources>

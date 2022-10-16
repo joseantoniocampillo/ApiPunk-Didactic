@@ -1,0 +1,154 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "534ae60b951cbcb0491d05261f9795ae",
+    "entities": [
+      {
+        "tableName": "beer_table",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `name` TEXT, `tagline` TEXT, `firstBrewed` TEXT, `description` TEXT, `imageUrl` TEXT, `abv` REAL, `ibu` REAL, `targetFg` REAL, `targetOg` REAL, `ebc` REAL, `srm` REAL, `ph` REAL, `attenuationLevel` REAL, `volume` TEXT, `boilVolume` TEXT, `method` TEXT, `ingredients` TEXT, `foodPairing` TEXT, `brewersTips` TEXT, `contributedBy` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tagline",
+            "columnName": "tagline",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "firstBrewed",
+            "columnName": "firstBrewed",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "imageUrl",
+            "columnName": "imageUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "abv",
+            "columnName": "abv",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ibu",
+            "columnName": "ibu",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "targetFg",
+            "columnName": "targetFg",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "targetOg",
+            "columnName": "targetOg",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ebc",
+            "columnName": "ebc",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "srm",
+            "columnName": "srm",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ph",
+            "columnName": "ph",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "attenuationLevel",
+            "columnName": "attenuationLevel",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "volume",
+            "columnName": "volume",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "boilVolume",
+            "columnName": "boilVolume",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "method",
+            "columnName": "method",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ingredients",
+            "columnName": "ingredients",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "foodPairing",
+            "columnName": "foodPairing",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "brewersTips",
+            "columnName": "brewersTips",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "contributedBy",
+            "columnName": "contributedBy",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '534ae60b951cbcb0491d05261f9795ae')"
+    ]
+  }
+}
