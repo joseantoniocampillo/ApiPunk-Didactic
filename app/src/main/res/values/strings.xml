@@ -5,4 +5,9 @@
     <string name="ph">ph</string>
     <string name="boilVolume">Boil volume</string>
     <string name="about">About</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_desde_1">Hello desde el fragment 1</string>
+    <string name="hello_desde_2">Hello desde el fragment 2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
